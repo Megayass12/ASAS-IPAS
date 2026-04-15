@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bahan Ajar IPAS — Kelas 6 SD</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="app">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-icon">🌍</div>
+    <div>
+      <h1>Bahan Ajar IPAS — Kelas 6 SD</h1>
+      <p>SD Islam Imam Syafi'i · Sumatif Tengah Semester 2 · TA 2025-2026</p>
+      <div class="pills">
+        <span class="pill pill-blue">Tata Surya &amp; Antariksa</span>
+        <span class="pill pill-amber">Energi</span>
+        <span class="pill pill-green">Lingkungan &amp; Ekologi</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TABS -->
+  <div class="tab-bar">
+    <button class="tab active" onclick="goTab('materi', this)">Materi</button>
+    <button class="tab"        onclick="goTab('soal',   this)">Latihan PG (45 Soal)</button>
+    <button class="tab"        onclick="goTab('isian',  this)">Latihan Isian</button>
+    <button class="tab"        onclick="goTab('essay',  this)">Latihan Uraian</button>
+    <button class="tab"        onclick="goTab('flash',  this)">Flashcard</button>
+  </div>
+
+  <!-- ══════════ MATERI ══════════ -->
+  <div id="tab-materi" class="section active">
+
+    <!-- A. TATA SURYA -->
+    <div class="card">
+      <div class="card-title" onclick="toggleCard('m-ts', this.querySelector('.arrow'))">
+        <div class="left"><span>A. Tata Surya &amp; Benda Langit</span><span class="badge b-blue">Topik 1</span></div>
+        <span class="arrow open">▶</span>
+      </div>
+      <div class="card-body open" id="m-ts">
+
+        <div class="hl">
+          <strong>Susunan Tata Surya</strong><br>
+          Tata surya terdiri dari Matahari sebagai pusat, 8 planet, satelit, asteroid, komet, dan meteoroid.
+        </div>
+
+        <div class="hl blue">
+          <strong>Urutan Planet dari Matahari:</strong><br>
+          <strong>Merkurius → Venus → Bumi → Mars → Jupiter → Saturnus → Uranus → Neptunus</strong><br>
+          Cara hafal: <em>"Me-Ve-Bu-Mar-Ju-Sa-U-Ne"</em>
+        </div>
+
+        <div class="hl">
+          <strong>Pengelompokan Planet</strong>
+          <table class="mat">
+            <tr><th>Planet Dalam (Inner)</th><th>Planet Luar (Outer)</th></tr>
+            <tr><td>Merkurius, Venus, Bumi, Mars</td><td>Jupiter, Saturnus, Uranus, Neptunus</td></tr>
+            <tr><td>Di dalam sabuk asteroid</td><td>Di luar sabuk asteroid</td></tr>
+            <tr><td>Ukuran kecil, berbatu/padat</td><td>Ukuran besar, tersusun gas/es</td></tr>
+          </table>
+        </div>
+
+        <div class="hl amber">
+          <strong>Ciri Khas Planet</strong>
+          <table class="mat">
+            <tr><th>Planet</th><th>Ciri Khas</th></tr>
+            <tr><td>Merkurius</td><td>Planet terkecil, terdekat dari Matahari, tidak punya atmosfer</td></tr>
+            <tr><td>Venus</td><td>Planet terpanas (efek rumah kaca ekstrem), bercahaya paling terang</td></tr>
+            <tr><td>Bumi</td><td>Satu-satunya planet berpenghuni, punya air cair</td></tr>
+            <tr><td>Mars</td><td>Planet merah, memiliki gunung tertinggi di tata surya (Olympus Mons)</td></tr>
+            <tr><td>Jupiter</td><td>Planet terbesar, memiliki Bintik Merah Besar (badai abadi)</td></tr>
+            <tr><td>Saturnus</td><td>Memiliki cincin es paling indah dan lebar</td></tr>
+            <tr><td>Uranus</td><td>Berputar miring (sumbu 98°), berwarna biru-hijau</td></tr>
+            <tr><td>Neptunus</td><td>Planet terjauh, memiliki angin terkencang di tata surya</td></tr>
+          </table>
+        </div>
+
+        <div class="hl">
+          <strong>Benda Langit &amp; Jenisnya</strong>
+          <table class="mat">
+            <tr><th>Benda Langit</th><th>Ciri Utama</th><th>Contoh</th></tr>
+            <tr><td>Bintang</td><td>Memancarkan cahaya sendiri (fusi nuklir)</td><td>Matahari, Sirius</td></tr>
+            <tr><td>Planet</td><td>Mengorbit bintang, tidak memancarkan cahaya sendiri</td><td>Bumi, Mars</td></tr>
+            <tr><td>Satelit</td><td>Mengorbit planet</td><td>Bulan (satelit Bumi)</td></tr>
+            <tr><td>Asteroid</td><td>Batu/logam kecil, mengorbit Matahari</td><td>Ceres, Vesta</td></tr>
+            <tr><td>Komet</td><td>Es dan debu, memiliki ekor saat dekat Matahari</td><td>Halley</td></tr>
+          </table>
+        </div>
+
+        <div class="hl blue">
+          <strong>Lapisan Matahari (dari dalam ke luar):</strong><br>
+          1. Inti → 2. Zona Radiasi → 3. Zona Konveksi → 4. Fotosfer → 5. Kromosfer → 6. <strong>Korona</strong> (terluar)
+        </div>
+
+      </div>
+    </div>
+
+    <!-- B. ROTASI, REVOLUSI & GERHANA -->
+    <div class="card">
+      <div class="card-title" onclick="toggleCard('m-rot', this.querySelector('.arrow'))">
+        <div class="left"><span>B. Rotasi, Revolusi, &amp; Gerhana</span><span class="badge b-purple">Topik 2</span></div>
+        <span class="arrow open">▶</span>
+      </div>
+      <div class="card-body open" id="m-rot">
+
+        <div class="hl">
+          <strong>Rotasi vs Revolusi Bumi</strong>
+          <table class="mat">
+            <tr><th>Aspek</th><th>Rotasi</th><th>Revolusi Bumi</th></tr>
+            <tr><td>Definisi</td><td>Bumi berputar pada porosnya</td><td>Bumi mengelilingi Matahari</td></tr>
+            <tr><td>Arah</td><td>Barat → Timur</td><td>Berlawanan jarum jam</td></tr>
+            <tr><td>Waktu</td><td>±24 jam (1 hari)</td><td>±365,25 hari (1 tahun)</td></tr>
+            <tr><td>Akibat</td><td>Siang &amp; malam, perbedaan waktu, gerak semu harian Matahari</td><td>Pergantian musim, tahun kabisat, gerak semu tahunan</td></tr>
+          </table>
+        </div>
+
+        <div class="hl purple">
+          <strong>Revolusi Bulan mengelilingi Bumi</strong><br>
+          • Waktu: ±29,5 hari (1 bulan sinodik)<br>
+          • Dalam 1 tahun: 365 ÷ 29,5 ≈ <strong>12 kali revolusi</strong><br>
+          • Akibat: Fase/penampakan Bulan berubah, gerhana Bulan dan Matahari
+        </div>
+
+        <div class="hl amber">
+          <strong>Gerhana Matahari vs Gerhana Bulan</strong>
+          <table class="mat">
+            <tr><th>Aspek</th><th>Gerhana Matahari</th><th>Gerhana Bulan</th></tr>
+            <tr><td>Posisi</td><td>Matahari–<strong>Bulan</strong>–Bumi</td><td>Matahari–<strong>Bumi</strong>–Bulan</td></tr>
+            <tr><td>Yang terhalang</td><td>Cahaya Matahari terhalang Bulan</td><td>Bulan masuk bayangan Bumi</td></tr>
+            <tr><td>Terjadi saat</td><td>Bulan Baru</td><td>Bulan Purnama</td></tr>
+            <tr><td>Jenis total</td><td>Gerhana Matahari Total (Bumi di umbra Bulan)</td><td>Gerhana Bulan Total (Bulan di umbra Bumi)</td></tr>
+          </table>
+        </div>
+
+        <div class="hl">
+          <strong>Tahun Kabisat</strong><br>
+          • Tahun yang habis dibagi <strong>4</strong> = tahun kabisat (Februari = 29 hari, total 366 hari)<br>
+          • Pengecualian: tahun abad (1700, 1800, 1900) bukan kabisat, kecuali habis dibagi <strong>400</strong><br>
+          • Alasan: revolusi Bumi = 365,25 hari, sisa 0,25 hari dikumpulkan tiap 4 tahun
+        </div>
+
+      </div>
+    </div>
+
+    <!-- C. ENERGI -->
+    <div class="card">
+      <div class="card-title" onclick="toggleCard('m-en', this.querySelector('.arrow'))">
+        <div class="left"><span>C. Energi: Sumber, Jenis &amp; Perubahan</span><span class="badge b-amber">Topik 3</span></div>
+        <span class="arrow open">▶</span>
+      </div>
+      <div class="card-body open" id="m-en">
+
+        <div class="hl">
+          <strong>Pengertian Energi</strong><br>
+          Energi adalah kemampuan untuk melakukan usaha atau kerja. Energi tidak dapat diciptakan atau dimusnahkan, hanya berubah bentuk (hukum kekekalan energi).
+        </div>
+
+        <div class="hl amber">
+          <strong>Perubahan Bentuk Energi pada Peralatan</strong>
+          <table class="mat">
+            <tr><th>Alat</th><th>Perubahan Energi</th></tr>
+            <tr><td>Setrika</td><td>Listrik → Panas</td></tr>
+            <tr><td>Lampu</td><td>Listrik → Cahaya (+ Panas)</td></tr>
+            <tr><td>Kipas angin</td><td>Listrik → Gerak (kinetik)</td></tr>
+            <tr><td>TV/Radio</td><td>Listrik → Cahaya + Suara</td></tr>
+            <tr><td>Panel surya</td><td>Cahaya (surya) → Listrik</td></tr>
+            <tr><td>Kincir angin</td><td>Gerak angin → Listrik</td></tr>
+          </table>
+        </div>
+
+        <div class="hl">
+          <strong>Energi Fosil vs Energi Terbarukan</strong>
+          <table class="mat">
+            <tr><th>Aspek</th><th>Energi Fosil</th><th>Energi Terbarukan</th></tr>
+            <tr><td>Sumber</td><td>Minyak bumi, batu bara, gas alam</td><td>Matahari, angin, air, panas bumi, biogas</td></tr>
+            <tr><td>Ketersediaan</td><td>Terbatas, akan habis</td><td>Tidak akan habis</td></tr>
+            <tr><td>Emisi</td><td>Menghasilkan CO₂ &amp; polutan</td><td>Minim/tanpa emisi</td></tr>
+            <tr><td>Biaya awal</td><td>Relatif murah</td><td>Mahal (instalasi)</td></tr>
+            <tr><td>Kelemahan</td><td>Mencemari lingkungan</td><td>Bergantung kondisi alam</td></tr>
+          </table>
+        </div>
+
+        <div class="hl blue">
+          <strong>Energi Kimia dari Makanan</strong><br>
+          Makanan mengandung energi kimia (karbohidrat, lemak, protein) yang diubah tubuh melalui metabolisme menjadi energi untuk:<br>
+          bergerak · berpikir · bernafas · pertumbuhan · menjaga suhu tubuh
+        </div>
+
+      </div>
+    </div>
+
+    <!-- D. ATMOSFER & LINGKUNGAN -->
+    <div class="card">
+      <div class="card-title" onclick="toggleCard('m-ling', this.querySelector('.arrow'))">
+        <div class="left"><span>D. Atmosfer, Lingkungan &amp; Efek Rumah Kaca</span><span class="badge b-green">Topik 4</span></div>
+        <span class="arrow open">▶</span>
+      </div>
+      <div class="card-body open" id="m-ling">
+
+        <div class="hl">
+          <strong>Lapisan Atmosfer Bumi</strong>
+          <table class="mat">
+            <tr><th>Lapisan</th><th>Ketinggian</th><th>Fungsi/Ciri</th></tr>
+            <tr><td><strong>Troposfer</strong></td><td>0–12 km</td><td>Tempat cuaca terjadi, tempat tinggal makhluk hidup</td></tr>
+            <tr><td><strong>Stratosfer</strong></td><td>12–50 km</td><td>Mengandung ozon yang melindungi dari sinar UV</td></tr>
+            <tr><td><strong>Mesosfer</strong></td><td>50–80 km</td><td>Tempat meteor terbakar habis</td></tr>
+            <tr><td><strong>Termosfer</strong></td><td>80–700 km</td><td>Tempat aurora terjadi</td></tr>
+            <tr><td><strong>Eksosfer</strong></td><td>&gt;700 km</td><td>Lapisan terluar, batas dengan ruang angkasa</td></tr>
+          </table>
+        </div>
+
+        <div class="hl red">
+          <strong>Efek Rumah Kaca &amp; Gas Penyebab</strong><br>
+          Proses: Radiasi Matahari masuk → diserap &amp; dipantulkan Bumi → gas rumah kaca memerangkap panas → suhu Bumi naik<br><br>
+          Gas penyebab utama:<br>
+          • <strong>CO₂</strong> (karbon dioksida) — pembakaran bahan bakar &amp; deforestasi<br>
+          • <strong>CH₄</strong> (metana) — peternakan, TPA sampah<br>
+          • <strong>N₂O</strong> (dinitrogen oksida) — pupuk kimia<br>
+          • <strong>H₂O</strong> (uap air) meningkat seiring kenaikan suhu
+        </div>
+
+        <div class="hl amber">
+          <strong>Dampak Pemanasan Global</strong>
+          <ol class="nlist">
+            <li>Mencairnya es di kutub → kenaikan permukaan laut</li>
+            <li>Cuaca ekstrem: banjir, kekeringan, badai</li>
+            <li>Kepunahan spesies akibat perubahan habitat</li>
+            <li>Ancaman terhadap wilayah pesisir &amp; pulau kecil</li>
+            <li>Perubahan pola musim dan curah hujan</li>
+          </ol>
+        </div>
+
+        <div class="hl">
+          <strong>Kerusakan Lingkungan &amp; Penyebabnya</strong>
+          <table class="mat">
+            <tr><th>Jenis Kerusakan</th><th>Penyebab Manusia</th><th>Penyebab Alam</th></tr>
+            <tr><td>Pencemaran udara</td><td>Asap kendaraan, pabrik, pembakaran sampah</td><td>Abu vulkanik</td></tr>
+            <tr><td>Pencemaran air</td><td>Limbah industri, pupuk berlebih, sampah</td><td>Banjir, tsunami</td></tr>
+            <tr><td>Kerusakan hutan</td><td>Penebangan liar, kebakaran hutan disengaja</td><td>Petir, letusan gunung</td></tr>
+            <tr><td>Tanah longsor</td><td>Penebangan pohon di lereng bukit</td><td>Gempa bumi, hujan lebat</td></tr>
+          </table>
+        </div>
+
+        <div class="hl blue">
+          <strong>Produk &amp; Tindakan Ramah Lingkungan</strong><br>
+          <strong>Di pertanian:</strong> pupuk organik/kompos, pestisida nabati, benih lokal<br>
+          <strong>Di kehidupan sehari-hari:</strong> tas kain, botol minum reusable, produk biodegradable<br>
+          <strong>Mengurangi pemanasan global:</strong> menanam pohon, hemat listrik, pakai energi terbarukan, kurangi kendaraan bermotor
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- /tab-materi -->
+
+  <!-- ══════════ SOAL PG ══════════ -->
+  <div id="tab-soal" class="section">
+    <div class="score-bar">
+      <div>
+        <div class="score-num" id="skor-pg">0 / 0</div>
+        <div class="score-lbl">Jawaban benar · Total 45 soal sesuai kisi-kisi</div>
+      </div>
+      <button class="reset-btn" onclick="resetPG()">Ulangi Semua</button>
+    </div>
+    <div id="pg-list"></div>
+  </div>
+
+  <!-- ══════════ ISIAN ══════════ -->
+  <div id="tab-isian" class="section">
+    <div id="isian-list"></div>
+  </div>
+
+  <!-- ══════════ URAIAN ══════════ -->
+  <div id="tab-essay" class="section">
+    <div class="card" style="border-left:3px solid #2a7d4f;border-radius:0 12px 12px 12px">
+      <p style="font-size:13px;color:var(--text2);line-height:1.6">
+        Kerjakan soal uraian di bawah ini, lalu klik <strong>"Lihat Kunci Jawaban"</strong> untuk mencocokan jawabanmu.
+      </p>
+    </div>
+    <div id="essay-list"></div>
+  </div>
+
+  <!-- ══════════ FLASHCARD ══════════ -->
+  <div id="tab-flash" class="section">
+    <div class="fl-filter"   id="fl-filter"></div>
+    <div class="fl-progress" id="fl-progress"></div>
+    <div class="fl-card"     id="fl-card" onclick="flipCard()">
+      <div class="fl-cat-pill badge" id="fl-cat-pill"></div>
+      <div class="fl-front"    id="fl-front"></div>
+      <div class="fl-back"     id="fl-back"></div>
+      <div class="fl-flip-hint" id="fl-flip-hint">Klik untuk lihat jawaban</div>
+    </div>
+    <div class="fl-nav">
+      <button onclick="prevCard()">← Sebelumnya</button>
+      <button onclick="flipCard()">Balik Kartu</button>
+      <button onclick="nextCard()">Selanjutnya →</button>
+    </div>
+  </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
